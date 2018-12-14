@@ -1,0 +1,21 @@
+<!-- START PAGE SIDEBAR -->
+<div class="page-sidebar">
+    <!-- START X-NAVIGATION -->
+    <ul class="m-menu__nav  m-menu__nav--dropdown-submenu-arrow x-navigation">
+        <li class="xn-logo">
+            <img class="notocar logo-infometrix" src="images/bodytech.png" alt="bodytech" />
+        </li>
+        <li class="xn-title">Menú</li>
+        <li class="m-menu__item  m-menu__item--submenu" routerLinkActive="m-menu__item--active" routerLinkActiveOptions="{ exact: true }"
+            aria-haspopup="true" data-menu-submenu-toggle="hover" *ngIf="permissionMenu.dashobard">
+            <a routerLink="/dashboard" class="m-menu__link m-menu__toggle menuoption">
+                <span class="fa fa-check"></span>Dashboard</a>
+        </li>
+        <li class="m-menu__item  m-menu__item--submenu" routerLinkActive="m-menu__item--active" routerLinkActiveOptions="{ exact: true }"
+            aria-haspopup="true" data-menu-submenu-toggle="hover" *ngIf="permissionMenu.clients">
+            <a routerLink="/clientes" class="m-menu__link m-menu__toggle menuoption">
+                <span class="fa fa-check"></span>Clientes</a>
+        </li>
+    </ul>
+    <!-- END X-NAVIGATION -->
+</div>
